@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px;
+}
+
+/* Ümumi margin və spacing */
+h1, h2, p, hr, img {
+    margin: 30px;
+}
+
+/* Başlıqlar */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #0a3d62;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #1e3799;
+    border-left: 5px solid #4a69bd;
+    padding-left: 15px;
+}
+
+/* Paragraf sütunları */
+.p01 {
+    column-count: 4;
+    column-gap: 40px;
+    column-rule: 3px solid #3498db;
+}
+
+.p02 {
+    column-count: 5;
+    column-gap: 40px;
+    column-rule: 3px solid #2980b9;
+}
+
+/* Xətt stili */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #4a69bd, #60a3bc);
+    border-radius: 10px;
+}
+
+/* Şəkil stili */
+img {
+    float: left;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 30px 30px 10px 30px;
+}
+
+/* Article hissələri üçün fon və kölgə */
+article {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ümumi bədən */
+body {
+    background: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px;
+}
+
+/* Başlıqlar, paragraflar, xətt və şəkillərin boşluğu */
+h1, h2, p, hr, img {
+    margin: 30px;
+}
+
+/* H1 başlıq */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #0a3d62;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* H2 başlıqlar */
+h2 {
+    font-size: 1.8em;
+    color: #1e3799;
+    border-left: 5px solid #4a69bd;
+    padding-left: 15px;
+}
+
+/* Sütunlu paragraf 1 */
+.p01 {
+    column-count: 4;
+    column-gap: 40px;
+    column-rule: 3px solid #3498db;
+}
+
+/* Sütunlu paragraf 2 */
+.p02 {
+    column-count: 5;
+    column-gap: 40px;
+    column-rule: 3px solid #2980b9;
+}
+
+/* HR xətti */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #4a69bd, #60a3bc);
+    border-radius: 10px;
+}
+
+/* Şəkil stilləri */
+img {
+    float: left;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 30px 30px 10px 30px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Məqalə qutusu */
+article {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: box-shadow 0.3s ease;
+}
+
+article:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsiv görünüş */
+@media (max-width: 768px) {
+    .p01,
+    .p02 {
+        column-count: 2;
+    }
+
+    img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .p01,
+    .p02 {
+        column-count: 1;
+    }
+}
